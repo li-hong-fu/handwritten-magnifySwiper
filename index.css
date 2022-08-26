@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin : 0;
+}
+
+
+.album-item {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 20px;
+    padding        : 20px 0;
+    border-bottom  : 1px solid #ddd;
+}
+
+.album-item .album-img {
+    border       : 1px solid #ddd;
+    margin-right : 10px;
+    border-radius: 5px;
+    max-width    : 260px;
+    max-height   : 260px;
+    z-index      : 100;
+}
+
+.album-item .album-img img {
+    width     : 260px;
+    height    : 260px;
+    object-fit: contain;
+    cursor    : pointer;
+    z-index   : 1;
+}
+
+.album-item.active .album-img img {
+    width : 200px;
+    height: 200px;
+}
